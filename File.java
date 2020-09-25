@@ -5,19 +5,21 @@ public static final int RPH=20;
 public static void main(String[] args){
 int empH=0;
 int empW=0;
-double check=Math.floor(Math.random()*10 % 3);
+int check=(int)Math.floor(Math.random()*10 % 3);
 System.out.println("Welcome");
-if(check==present)
+switch (check)
 {
+case present:
 empH=8;
 System.out.println("Employee is Present");
-}
-else if(check==Halfpresent)
-{
+break;
+
+case Halfpresent:
 empH=4;
-}
-else
-{
+break;
+
+default:
+
 empH=0;
 System.out.println("Employee is Absent");
 }
