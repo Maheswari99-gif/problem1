@@ -6,7 +6,7 @@ private CompanyEmpWage[] companyEmpWageArray;
 public EmpWage(){
 companyEmpWageArray=new CompanyEmpWage[5];
 }
-private void addCompanyEmpWage(String Company,int empRatePerHour,int numOfWorkingDays,int maxHoursPerMonth){
+public void addCompanyEmpWage(String Company,int empRatePerHour,int numOfWorkingDays,int maxHoursPerMonth){
 companyEmpWageArray[numOfCompany]=new CompanyEmpWage( Company, empRatePerHour, numOfWorkingDays,  maxHoursPerMonth);
 numOfCompany++;
 }
@@ -16,7 +16,7 @@ companyEmpWageArray[i].setTotalEmpWage(this.computeEmpWage(companyEmpWageArray[i
 System.out.println(companyEmpWageArray[i]);
 }
 }
-private int computeEmpWage(CompanyEmpWage companyEmpWage){
+public int computeEmpWage(CompanyEmpWage companyEmpWage){
 int empHrs=0;
 int totalEmpHrs=0 , totalWorkingDays=0 ;
 System.out.println("Welcome");
