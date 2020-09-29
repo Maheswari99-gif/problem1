@@ -1,4 +1,4 @@
-public class EmpWage{
+public class EmpWage implements IComputeEmpWage{
 public static final int IS_FULL_TIME=2;
 public static final int IS_PART_TIME=1;
 private int numOfCompany =0;
