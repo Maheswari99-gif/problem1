@@ -1,7 +1,5 @@
-<<<<<<< HEAD
+
 import java.util.ArrayList;
-=======
->>>>>>> 5c686bf915b7993c168b8cc50e43cb41bd5470ef
 public class EmpWage implements IComputeEmpWage{
 public static final int IS_FULL_TIME=2;
 public static final int IS_PART_TIME=1;
@@ -23,7 +21,7 @@ System.out.println(companyEmpWage);
 }
 public int computeEmpWage(CompanyEmpWage companyEmpWage){
 int empHrs=0;
-int totalEmpHrs=0 , totalWorkingDays=0 ;
+int totalEmpHrs=0 , totalWorkingDays=0,DailyWage ;
 System.out.println("Welcome");
 while((totalEmpHrs<=companyEmpWage.maxHoursPerMonth) && (totalWorkingDays<companyEmpWage.numOfWorkingDays)){
 totalWorkingDays++;
@@ -41,6 +39,8 @@ empHrs=0;
 }
 totalEmpHrs  +=empHrs;
 System.out.println("Day: " + totalWorkingDays + " Emp Hr: "+empHrs);
+DailyWage=empHrs*companyEmpWage.empRatePerHour;
+System.out.println("Daily Wage: "+DailyWage);
 }
 return totalEmpHrs*companyEmpWage.empRatePerHour;
 }
