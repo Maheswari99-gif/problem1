@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> 5c686bf915b7993c168b8cc50e43cb41bd5470ef
 public class EmpWage implements IComputeEmpWage{
 public static final int IS_FULL_TIME=2;
 public static final int IS_PART_TIME=1;
